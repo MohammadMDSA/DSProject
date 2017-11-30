@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.Generic;
 
 namespace DSProject0
 {
@@ -23,6 +23,17 @@ namespace DSProject0
 		public MainWindow()
 		{
 			InitializeComponent();
+		}
+
+		private void OnActivated(object sender, EventArgs e)
+		{
+			var ll = new List<int>();
+			ll.Add(1);
+			ll.Add(2);
+			ll.Add(3);
+			var a = new List<int>();
+			
+			list.ItemsSource = ll;
 		}
 	}
 }
